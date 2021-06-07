@@ -1,7 +1,5 @@
 import discord
 from discord.ext import commands
-import os, random
-from glob import glob
 
 
 class Events(commands.Cog):
