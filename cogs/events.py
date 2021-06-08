@@ -60,6 +60,20 @@ class Events(commands.Cog):
                 if member:
                     await member.add_roles(role)
 
+        if message_id == 851653732139925525:
+            guild_id = payload.guild_id
+            guild = discord.utils.find(
+                lambda g: g.id == guild_id, self.bot.guilds)
+            role = None
+
+            if payload.emoji.name == '☕':
+                role = discord.utils.get(guild.roles, name='promotions')
+
+            if role is not None:
+                member = payload.member
+                if member:
+                    await member.add_roles(role)
+
 
 def setup(bot):
     bot.add_cog(Events(bot))
