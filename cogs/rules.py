@@ -20,7 +20,6 @@ class Rules(commands.Cog):
 4️⃣ Don't spam
 5️⃣ Don't ask for mod privileges
 6️⃣ Advertisements are prohibited, unless otherwise approved by a mod
-        
         '''
         rules_img_path = f"{os.path.dirname(os.path.dirname(__file__))}/images/rules.png"
         violations = '''
@@ -30,13 +29,20 @@ into any channel. Your message will be automatically deleted and an anonymous re
         '''
 
         embed = discord.Embed(
-            title='**Welcome to the UIUC Coffee Club!**', color=0xfff8e7)
-        # embed.set_thumbnail(url=thumbnail)
-        embed.add_field(name=('**Rules**'),
-                        value=rules, inline=False)
-        embed.add_field(name='**Reporting Rule Violations**',
-                        value=violations, inline=False)
+            title='**Welcome to the UIUC Coffee Club!**', color=0x36393f)
+        # embed.add_thumbnail(url='')
+        # embed.set_image(url='')
+
+        embed_rules = discord.Embed(description=rules, color=0x36393f)
+        embed_rules.set_author(name="Rules")
+        embed_rules.add_field(name=' **Reporting Rule Violations**',
+                              value=violations, inline=False)
+
+        invite_link = 'https://discord.gg/RcZKvUMDdt'
+
         await channel.send(embed=embed)
+        await channel.send(embed=embed_rules)
+        await channel.send(invite_link)
 
 
 def setup(bot):
