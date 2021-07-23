@@ -24,7 +24,7 @@ class Rules(commands.Cog):
         rules_img_path = f"{os.path.dirname(os.path.dirname(__file__))}/images/rules.png"
         violations = '''
 Please report rule violations by typing:
-``` /report [channel to look at] [message explaining incident] ```
+```.report [channel to look at] [message explaining incident]```
 into any channel. Your message will be automatically deleted and an anonymous report will be sent to a <@&806006810200244224>
         '''
 
