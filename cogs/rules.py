@@ -16,7 +16,7 @@ class Rules(commands.Cog):
         rules = '''
 1️⃣ Be kind
 2️⃣ Uphold [UIUC's non-discrimination policies](https://cam.illinois.edu/policies/hr-48)
-3️⃣ Limit NSFW content to marked channels (#shitposts, #gaming and #weebs)
+3️⃣ Limit NSFW content to marked channels (<#850926568137424897>, <#851887328665796689> and <#850925240372428840>)
 4️⃣ Don't spam
 5️⃣ Don't ask for mod privileges
 6️⃣ Advertisements are prohibited, unless otherwise approved by a mod
@@ -25,7 +25,7 @@ class Rules(commands.Cog):
         violations = '''
 Please report rule violations by typing:
 ``` /report [channel to look at] [message explaining incident] ```
-into any channel. Your message will be automatically deleted and an anonymous report will be sent to a @moderator
+into any channel. Your message will be automatically deleted and an anonymous report will be sent to a <@&806006810200244224>
         '''
 
         embed = discord.Embed(
