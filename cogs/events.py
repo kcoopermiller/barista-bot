@@ -16,7 +16,7 @@ class Events(commands.Cog):
     @commands.Cog.listener()
     async def on_raw_reaction_add(self, payload):
         message_id = payload.message_id
-        if message_id == 822935001082757131:
+        if message_id == 867981074775543838:
             guild_id = payload.guild_id
             guild = discord.utils.find(
                 lambda g: g.id == guild_id, self.bot.guilds)
@@ -38,7 +38,7 @@ class Events(commands.Cog):
                 if member:
                     await member.add_roles(role)
 
-        if message_id == 823064650233020427:
+        if message_id == 867981075358572564:
             guild_id = payload.guild_id
             guild = discord.utils.find(
                 lambda g: g.id == guild_id, self.bot.guilds)
@@ -60,7 +60,7 @@ class Events(commands.Cog):
                 if member:
                     await member.add_roles(role)
 
-        if message_id == 851653732139925525:
+        if message_id == 867981075870285834:
             guild_id = payload.guild_id
             guild = discord.utils.find(
                 lambda g: g.id == guild_id, self.bot.guilds)
