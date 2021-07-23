@@ -1,6 +1,8 @@
 import discord
 from discord.ext import commands
-import os, random
+import os
+import random
+
 
 class Facts(commands.Cog):
 
@@ -9,11 +11,9 @@ class Facts(commands.Cog):
 
     @commands.command()
     async def fact(self, ctx):
-        await ctx.send(file=discord.File(os.path.join(os.path.dirname(__file__), 
-            "../images/facts/" + random.choice(os.listdir(os.path.join(os.path.dirname(__file__), "../images/facts"))))))
+        await ctx.send(file=discord.File(os.path.join(os.path.dirname(__file__),
+                                                      "../images/facts/" + random.choice(os.listdir(os.path.join(os.path.dirname(__file__), "../images/facts"))))))
 
 
 def setup(bot):
     bot.add_cog(Facts(bot))
-
-    
