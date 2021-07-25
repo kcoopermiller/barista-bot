@@ -8,5 +8,5 @@ for filename in os.listdir('cogs'):
     if filename.endswith('.py'):
         bot.load_extension(f'cogs.{filename[:-3]}')
 
-bot.run((open("token.txt", "r")).read())
+bot.run(TOKEN)
 # will not run without token
