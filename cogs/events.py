@@ -10,7 +10,7 @@ class Events(commands.Cog):
     @commands.Cog.listener()
     async def on_ready(self):
         # this doesn't work
-        await self.bot.change_presence(activity=discord.CustomActivity(name='Brewing...'))
+        await self.bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name=".help"))
         print('Bot activated')
 
     @commands.Cog.listener()
