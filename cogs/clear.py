@@ -14,7 +14,7 @@ class Clear(commands.Cog):
         else:
             ctx.send("Cannot clear due to insufficient permissions")
             time.sleep(2)
-            await ctx.channel.purge(limit=1)
+            await ctx.channel.purge(limit=2)
 
 
 def setup(bot):
