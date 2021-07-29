@@ -11,9 +11,9 @@ class Facts(commands.Cog):
 
     @commands.command()
     async def fact(self, ctx):
-        await ctx.send(file=discord.File(os.path.join(os.path.dirname(__file__),
-                                                      "../images/facts/" + random.choice(os.listdir(os.path.join(os.path.dirname(__file__), "../images/facts"))))))
-
+        facts = os.listdir(os.path.join(os.path.dirname(os.path.dirname(__file__)), "images/facts"))
+        fact = [fact for fact in facts if fact.endswith('.png')]
+        await ctx.send(file=discord.File(os.path.join(os.path.dirname(os.path.dirname(__file__)), "images/facts/") + random.choice(fact)))
 
 def setup(bot):
     bot.add_cog(Facts(bot))
