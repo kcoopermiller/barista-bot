@@ -11,11 +11,11 @@ class Help(commands.Cog):
     async def help(self, ctx):
         commands = '''
         **Available Commands:**
-        .fact
-        .help
-        .ill
-        .pain
-        .report
+.fact
+.help
+.ill
+.pain
+.report
         '''
         embed = discord.Embed(title='**Help**', description=commands, color=0x36393f)
         await ctx.send(embed=embed)
