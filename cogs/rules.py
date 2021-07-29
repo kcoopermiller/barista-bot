@@ -22,7 +22,6 @@ class Rules(commands.Cog):
 5️⃣ Don't ask for mod privileges
 6️⃣ Advertisements are prohibited, unless otherwise approved by a mod
             '''
-            rules_img_path = f"{os.path.dirname(os.path.dirname(__file__))}/images/rules.png"
             violations = '''
 Please report rule violations by typing:
 ```.report [channel to look at] [message explaining incident]```
@@ -31,8 +30,6 @@ into any channel. Your message will be automatically deleted and an anonymous re
 
             embed = discord.Embed(
                 title='**Welcome to the UIUC Coffee Club!**', color=0x36393f)
-            # embed.add_thumbnail(url='')
-            # embed.set_image(url='')
 
             embed_rules = discord.Embed(description=rules, color=0x36393f)
             embed_rules.set_author(name="Rules")
