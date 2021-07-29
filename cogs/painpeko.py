@@ -10,7 +10,7 @@ class PainPeko(commands.Cog):
 
     @commands.command()
     async def pain(self, ctx):
-        await ctx.send(file=discord.File(os.path.join(os.path.dirname(__file__), '../images/painpeko.jpeg')))
+        await ctx.send(file=discord.File(os.path.dirname(os.path.dirname(__file__)) + '/images/painpeko.jpeg'))
 
 
 def setup(bot):
