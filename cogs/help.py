@@ -11,7 +11,7 @@ class Help(commands.Cog):
     async def help(self, ctx):
         commands = '''
         **Available Commands:**
-        .facts
+        .fact
         .help
         .ill
         .pain
