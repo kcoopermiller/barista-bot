@@ -25,7 +25,7 @@ class Rules(commands.Cog):
             violations = '''
 Please report rule violations by typing:
 ```.report [channel to look at] [message explaining incident]```
-into any channel. Your message will be automatically deleted and an anonymous report will be sent to a <@&806006810200244224>
+into any channel. Your message will be automatically deleted and an anonymous report will be sent to an <@&806006810200244224>
             '''
 
             embed = discord.Embed(
